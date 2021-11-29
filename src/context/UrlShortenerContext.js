@@ -66,9 +66,13 @@ function UrlProvider({ children }) {
     return payload?.username || "";
   };
 
-  useEffect(() => {
-    getAll();
-  }, []);
+  useEffect(
+    () => {
+      getAll();
+    },
+    // eslint-disable-next-line
+    []
+  );
 
   return (
     <UrlContext.Provider

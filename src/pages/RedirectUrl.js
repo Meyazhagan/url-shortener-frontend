@@ -1,11 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-// import { UrlContext } from "../context/UrlShortenerContext";
 import urlServices from "../services/UrlServices";
 
 function RedirectUrl() {
   const shortUrl = useParams().shortUrl;
-  //   const { FindUrl } = useContext(UrlContext);
   const [message, setMessage] = useState("");
   const getUrl = async () => {
     try {
@@ -17,9 +15,13 @@ function RedirectUrl() {
       setMessage(msg);
     }
   };
-  useEffect(() => {
-    getUrl();
-  }, []);
+  useEffect(
+    () => {
+      getUrl();
+    },
+    // eslint-disable-next-line
+    []
+  );
   return <p>Redirecting to {message}</p>;
 }
 

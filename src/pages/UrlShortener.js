@@ -1,8 +1,8 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router";
 import CreateUrl from "../components/CreateUrl";
 import { UrlContext } from "../context/UrlShortenerContext";
-import { getToken, removeToken } from "../services/AuthServices";
+import { removeToken } from "../services/AuthServices";
 
 function UrlShortener() {
   const { urls, onDelete, getAll, getUser } = useContext(UrlContext);
@@ -58,6 +58,7 @@ function UrlShortener() {
                         href={url.shortUrl}
                         target="_blank"
                         className="text-blue-800 hover:underline"
+                        rel="noreferrer"
                       >
                         {url.shortUrl}
                       </a>
