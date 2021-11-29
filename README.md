@@ -14,4 +14,4 @@ npm start
  npm build
 ```
 
-Deployed Link [click here]() - []()
+Deployed Link [click here](https://urls-45.netlify.app) - [https://urls-45.netlify.app](https://urls-45.netlify.app)
