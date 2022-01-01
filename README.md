@@ -15,3 +15,11 @@ npm start
 ```
 
 Deployed Link [click here](https://urls-45.netlify.app) - [https://urls-45.netlify.app](https://urls-45.netlify.app)
+
+
+```
+Demo Credentials
+
+email - demo@gmail.com
+password - demo
+```
